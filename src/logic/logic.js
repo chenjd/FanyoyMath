@@ -97,9 +97,9 @@ logic.Mgr = {
             this.gameOver.addChild(menu);
             this.gameOver.setPosition(320, 350);
             this._score > MAX_SCORE?MAX_SCORE = this._score:null;
-            var score = cc.LabelTTF.create(this._score, 'Arial', 30);
+            var score = cc.LabelTTF.create('' + this._score, 'Arial', 30);
             score.setPosition(280, 190);
-            var maxScore = cc.LabelTTF.create(MAX_SCORE, 'Arial', 30);
+            var maxScore = cc.LabelTTF.create('' + MAX_SCORE, 'Arial', 30);
             maxScore.setPosition(280, 100);
             this.gameOver.bg.addChild(score);
             this.gameOver.bg.addChild(maxScore);
